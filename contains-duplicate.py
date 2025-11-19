@@ -1,4 +1,11 @@
 from collections import Counter
-arr = [1,2,3,1]
+
+arr=[1,2,3,4]
 count = Counter(arr)
-print(count)  # Output: Counter({1: 2, 2: 1, 3: 1})
+for v in count.values():
+    if v > 1:
+        print(True)
+        break
+    elif v==1:
+        print(False)
+        
